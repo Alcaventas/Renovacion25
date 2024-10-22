@@ -189,7 +189,7 @@ global.notsent = '❗'
 global.waitemot = '⌛'
 global.waitemot2 = '⏳'
 
-global.multiplier = 60 // Cuanto más alto, más difícil subir de nivel 
+global.multiplier = 90 // Cuanto más alto, más difícil subir de nivel 
 
 let file = fileURLToPath(import.meta.url)
 watchFile(file, () => {
