@@ -5,6 +5,7 @@ import { fileURLToPath } from 'url'
 import path, { join } from 'path'
 import { unwatchFile, watchFile } from 'fs'
 import chalk from 'chalk'   
+import ws from 'ws'
 import fetch from 'node-fetch' 
 
 /**
