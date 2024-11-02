@@ -6,6 +6,7 @@ const { generateWAMessageFromContent, prepareWAMessageMedia, proto }  = (await i
 
 var handler = m => m
 handler.all = async function (m) {
+global.key = ''
 
 const response = await fetch('https://raw.githubusercontent.com/Alcaventas/Renovacion25/master/official_accounts.json')  
 const data = await response.json()
