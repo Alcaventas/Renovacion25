@@ -7,23 +7,19 @@ const { generateWAMessageFromContent, prepareWAMessageMedia, proto }  = (await i
 var handler = m => m
 handler.all = async function (m) {
 
-const response = await fetch('https://raw.githubusercontent.com/GataNina-Li/GataBot-MD/master/official_accounts.json')  
+const response = await fetch('https://raw.githubusercontent.com/Alcaventas/Renovacion25/master/official_accounts.json')  
 const data = await response.json()
-let { accounts, channels, groups, collaboration, sponsors, others } = data.info
+let { accounts,others } = data.info
 
 global.tk = accounts.tiktok
 global.ths = accounts.threads
 
-global.canal1 = channels.channel1
-global.canal2 = channels.channel2
-global.canal3 = channels.channel3
-global.canal4 = channels.channel4
 
-global.accountsgb = [canal1, canal2, canal3, canal4, tk, ig, yt, paypal, fb, ths, md, asistencia].getRandom()
+global.accountsgb = [ tk, ig, yt, md, asistencia].getRandom()
 
 var canalesInfo = [
-{ link: canal1, id: "120363179177464747@newsletter", name: "🎀𝐻𝒾𝓈𝓅𝒶𝓃𝒾𝒸 𝒢𝒶𝓁𝒶𝓍𝓎🎀" },
-{ link: canal3, id: "120363203805910750@newsletter", name: "Tips sobre GataBot 🤩" } 
+{ link: canal1, id: "", name: "@Alcashop" },
+{ link: canal3, id: "", name: "Tips sobre Alcabots 🤩" } 
 ]
 var indiceAleatorio = Math.floor(Math.random() * canalesInfo.length)
 var channelRD = canalesInfo[indiceAleatorio]
