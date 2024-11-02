@@ -164,14 +164,15 @@ break
 case isCommand11:
 if (!(isAdmin || isOwner)) {
 global.dfail('admin', m, conn)
-return false
+throw false
 }
 let pesan = args.join` `
-let oi = `» ${lenguajeGB['smsAddB5']()} ${pesan}`
-let teks = `*${lenguajeGB['smstagaa']()}*\n\n${oi}\n\n`
+let oi = `@alcashop.ff ${pesan}`
+let teks = `⚡️𝙈𝙚𝙣𝙘𝙞𝙤𝙣 𝙂𝙚𝙣𝙚𝙧𝙖𝙡`
 for (let mem of participants) {
-teks += `⎔ @${mem.id.split('@')[0]}\n`}
-await conn.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) }, )    
+teks += `💀 @${mem.id.split('@')[0]}\n`}
+teks += ``
+conn.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) }, )     
 break
     
 case isCommand12:
