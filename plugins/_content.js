@@ -15,7 +15,7 @@ global.tk = accounts.tiktok
 global.ths = accounts.threads
 
 
-global.accountsgb = [ tk, ig, yt, md, asistencia].getRandom()
+global.accountsgb = [ tk, ig, yt, md, ].getRandom()
 
 var canalesInfo = [
 { link: canal1, id: "", name: "@Alcashop" },
